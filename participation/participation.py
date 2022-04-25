@@ -17,14 +17,14 @@ def check_in(file, ori_list):
 
 
 if __name__ == '__main__':
-    filename = 'Apr06.csv'
+    filename = '4.20.csv'
     # choose the last whole column in csv 
     file = [line.split(',')[-1].strip() for line in open(filename, 'r').readlines()]
-    print(file)
+    # print(file)
     # stud list
     list = ['"8893265"', '"8833196"', '"8162638"', '"4814356"', 
     '"8042210"', '"8664351"', '"8639296"', '"5486899"', '"3755113"',
     '"8719254"', '"4486205"', '"4469284"', '"5966502"', '"4405635"',
     '"8039802"', '"5138359"', '"4481826"', '"3985272"', '"X304183"']
     
-    print(check_in(file, list))
+    print(filename,'\n', check_in(file, list))
